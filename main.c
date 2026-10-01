@@ -4,15 +4,13 @@ int main(void)
 {
     int num;
 
-    printf("Enter an integer: ");
+    printf("Enter the number: ");
     scanf("%i", &num);
 
     if (num > 0)
-        printf("Positive\n");
-    else if (num < 0)
-        printf("Negative\n");
+        printf("The absolute value is %i.\n", num);
     else
-        printf("Zero\n");
+        printf("The absolute value is %i.\n", -num);
 
     return 0;
 }
